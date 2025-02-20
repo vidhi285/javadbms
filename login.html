@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURGICAL PRODUCT MANUFACTURING MANAGEMENT SYSTEM</title>
+    <link rel="icon" type="image/png" href="surgitech global icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <p>Forgot Password? <a href="#">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="submit" id="signinBtn">Login</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to home.html when Login is clicked
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            window.location.href = "home.html"; // Redirect to home page
+        });
+    </script>
+</body> 
+</html>
